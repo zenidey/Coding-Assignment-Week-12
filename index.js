@@ -18,6 +18,7 @@ class Product {
 
 
 class BoxService {        
+    // static url = 'e1d6e8870ff74aa9a79bf5a8de2f8d06'; 
     static url = 'https://ancient-taiga-31359.herokuapp.com/api/houses'; 
 
     static getAllBoxes() {         
@@ -104,6 +105,7 @@ class DOMManager {
     }
 
 
+
     static render(boxes) {
         this.boxes = boxes;
         $('#app').empty();
@@ -118,10 +120,10 @@ class DOMManager {
                         <div class="card">
                             <div class="row">
                                 <div class="col-sm">
-                                    <input type="text" id="${box._id}-room-name" class ="form-control" placeHolder="Product Name">
+                                    <input type="text" id="${box._id}-room-name" class ="form-control" placeHolder="Product">
                                 </div>
                                 <div class="col-sm">
-                                <input type="text" id="${box._id}-room-area" class ="form-control" placeHolder="Product Area">
+                                <input type="text" id="${box._id}-room-area" class ="form-control" placeHolder="Price">
                                 </div>
                             </div>
                             <button id="${box._id}-new-room" onclick="DOMManager.addProduct('${box._id}')" class="btn btn-primary form-control">Add</button>
