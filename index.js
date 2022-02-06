@@ -114,7 +114,7 @@ class DOMManager {
                 `<div id="${box._id}" class="card">
                     <div class="card-header">
                         <h2>${box.name}</h2>
-                        <button class="btn btn-danger" onclick="DOMManager.deleteBox('${box._id}')">Delete</button>
+                        <button class="btn btn-outline-danger" onclick="DOMManager.deleteBox('${box._id}')">Delete</button>
                     </div>
                     <div class="card-body">
                         <div class="card">
@@ -137,7 +137,7 @@ class DOMManager {
                     `<p>
                     <span id="name-${room._id}"><strong>product: </strong> ${room.name}</span>
                     <span id="area-${room._id}"><strong>price: </strong> ${room.area}</span>
-                    <button class="btn btn-danger" onclick="DOMManager.deleteProduct('${box._id}', '${room._id}')">Delete Product</button></p>`
+                    <button class="btn btn-outline-danger" onclick="DOMManager.deleteProduct('${box._id}', '${room._id}')">Delete Product</button></p>`
                 );
             }
         }
