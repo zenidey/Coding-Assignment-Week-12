@@ -114,7 +114,7 @@ class DOMManager {
                 `<div id="${box._id}" class="card">
                     <div class="card-header">
                         <h2>${box.name}</h2>
-                        <button class="btn btn-outline-danger" onclick="DOMManager.deleteBox('${box._id}')">Delete</button>
+                        <button class="btn btn-dark" onclick="DOMManager.deleteBox('${box._id}')">Delete</button>
                     </div>
                     <div class="card-body">
                         <div class="card">
@@ -126,7 +126,7 @@ class DOMManager {
                                 <input type="text" id="${box._id}-room-area" class ="form-control" placeHolder="Price">
                                 </div>
                             </div>
-                            <button id="${box._id}-new-room" onclick="DOMManager.addProduct('${box._id}')" class="btn btn-primary form-control">Add</button>
+                            <button id="${box._id}-new-room" onclick="DOMManager.addProduct('${box._id}')" class="btn  create-button form-control">Add</button>
                         </div>
                     </div>
                 </div> <br>`
@@ -137,7 +137,7 @@ class DOMManager {
                     `<p>
                     <span id="name-${room._id}"><strong>Product: </strong> ${room.name}</span>
                     <span id="area-${room._id}"><strong>Price: </strong> ${room.area}</span>
-                    <button class="btn btn-danger" onclick="DOMManager.deleteProduct('${box._id}', '${room._id}')">Delete Product</button></p>`
+                    <button class="btn btn-dark" onclick="DOMManager.deleteProduct('${box._id}', '${room._id}')">Delete Product</button></p>`
                 );
             }
         }
