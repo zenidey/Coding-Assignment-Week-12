@@ -1,10 +1,31 @@
 body {
-    text-align: center;
-    background-image: url("images/sprinkles.jpeg");
+  text-align: center;
+  background-image: url("images/sprinkles.jpeg");
 }
 
-.create-button{
-    background-color: darksalmon !important;
+.create-button {
+  background-color: darksalmon !important;
 }
 
 /* B9D9F0 */
+
+#new-box {
+  background-color: #c3bef0;
+  margin-top: 5em;
+  box-shadow: 5px 10px #9896f1;
+  background: linear-gradient(#e58cdb, 50%, #9896f1);
+}
+
+div.card-header {
+  /* background-color:#eec1ea; */
+  background: linear-gradient(#e58cdb, 50%, #9896f1);
+  box-shadow: 5px 10px #e58cdb;
+  border: #ee7cff solid 5px;
+  border-bottom: none;
+}
+div.card-body {
+  background-color: #eea1eb;
+  border: #9896f1 solid 5px;
+  box-shadow: 5px 10px #e58cdb;
+  border-top: none;
+}

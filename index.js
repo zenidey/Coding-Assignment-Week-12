@@ -135,9 +135,9 @@ class DOMManager {
             for (let room of box.rooms) {
                 $(`#${box._id}`).find('.card-body').append(
                     `<p>
-                    <span id="name-${room._id}"><strong>product: </strong> ${room.name}</span>
-                    <span id="area-${room._id}"><strong>price: </strong> ${room.area}</span>
-                    <button class="btn btn-outline-danger" onclick="DOMManager.deleteProduct('${box._id}', '${room._id}')">Delete Product</button></p>`
+                    <span id="name-${room._id}"><strong>Product: </strong> ${room.name}</span>
+                    <span id="area-${room._id}"><strong>Price: </strong> ${room.area}</span>
+                    <button class="btn btn-danger" onclick="DOMManager.deleteProduct('${box._id}', '${room._id}')">Delete Product</button></p>`
                 );
             }
         }
